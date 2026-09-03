@@ -1,16 +1,28 @@
+# Build output
+bin/
+obj/
 
-.vs/vmdk/v15/.suo
-*.lock
-*.ide
-*.ide-shm
-*.ide-wal
-vmdk/obj/Debug/vmdk.csproj.CoreCompileInputs.cache
-vmdk/obj/Debug/vmdk.csproj.FileListAbsolute.txt
-vmdk/obj/Debug/vmdk.csprojAssemblyReference.cache
-vmdk/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
-vmdk/obj/Release/vmdk.csproj.CopyComplete
-vmdk/obj/Release/vmdk.csproj.CoreCompileInputs.cache
-vmdk/obj/Release/vmdk.csproj.FileListAbsolute.txt
-vmdk/obj/Release/vmdk.csprojAssemblyReference.cache
-vmdk/obj/Release/vmdk.exe
-vmdk/obj/Release/vmdk.pdb
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet (restore packages, don't commit them)
+packages/
+*.nupkg
+!packages/repositories.config
+
+# ILMerge output is in bin/, already covered above
+
+# Compiled output
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
